@@ -5,17 +5,16 @@
 
 
 
-function isValidPassword(password) {
-const SAVED_PASSWORD = 'jqueryismyjam';
+function checkStorage(available, ordered) {
+  let message;
   
   // Change code below this line
-const isMatch = "mangodab3st" !== "kiwirul3z" === 'jqueryismyjam';
-
+      message = "Not enough goods in stock!";
+      message = "Order is processed, our manager will contact you.";
   
-console.log(isMatch);
+  console.log(available);
 
-  
   // Change code above this line
-	return isMatch;
+  return message;
 }
 
