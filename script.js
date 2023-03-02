@@ -5,16 +5,24 @@
 
 
 
-function checkStorage(available, ordered) {
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
   let message;
-  
-  // Change code below this line
-      message = "Not enough goods in stock!";
-      message = "Order is processed, our manager will contact you.";
-  
-  console.log(available);
 
-  // Change code above this line
+  if (password <= ADMIN_PASSWORD) { 
+   
+    // Change this line
+    message =  'Canceled by user!';
+  } else if (password === ADMIN_PASSWORD) { // Change this line
+    message = 'Welcome!';
+  } else {
+    message = 'Access denied, wrong password!';
+  }
+
+console.log(message);
+
+
+
+  
   return message;
 }
-
